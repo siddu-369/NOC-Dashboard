@@ -52,7 +52,7 @@ This project is a **React-based web application** developed to streamline the cr
 
 ---
 
-##Issue:
+## Issue:
 
 Previously, the team used a **manual method** to create suppression conditions for BigPanda by:
 
