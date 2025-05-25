@@ -40,7 +40,7 @@ Backend Setup.
 
 This is a centralized application dashboard to open the apps so quickly , just a tap and it takes you to the work.
 
-# 📘 BigPanda Condition Generator
+# BigPanda Condition Generator
 
 **BigPanda Alert Suppression Condition Generator**
 
@@ -52,9 +52,9 @@ This project is a **React-based web application** developed to streamline the cr
 
 ---
 
-## 🎯 Problem Statement:
+##Issue:
 
-Previously, the NOC team used a **manual method** to create suppression conditions for BigPanda by:
+Previously, the team used a **manual method** to create suppression conditions for BigPanda by:
 
 - Manually copying and pasting server names.
 - Editing the condition strings by hand.
@@ -64,7 +64,7 @@ This method was inefficient, especially when dealing with large numbers of serve
 
 ---
 
-## ✅ Solution:
+## Solution:
 
 The **BigPanda Condition Generator** web app provides:
 
