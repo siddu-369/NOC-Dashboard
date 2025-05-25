@@ -2,6 +2,8 @@
 
 ## To setup this into local system, clone the repository using the following commands.
 
+Frontend Setup
+
 ```bash
     git clone <URL>
 ```
@@ -36,11 +38,9 @@ Backend Setup.
 
 # My Apps
 
-This is a centralized application dashboard to opne the apps so quickly , just a tap and it takes you to the work.
+This is a centralized application dashboard to open the apps so quickly , just a tap and it takes you to the work.
 
 # 📘 BigPanda Condition Generator
-
-## 🔖 Project Title:
 
 **BigPanda Alert Suppression Condition Generator**
 
@@ -76,9 +76,10 @@ The **BigPanda Condition Generator** web app provides:
 
 ## 🛠️ Tech Stack:
 
-- **Frontend**: React.js (JavaScript)
-- **Styling**: CSS (optionally Bootstrap or Tailwind)
-- **Hosting**: (Optional: Netlify, Vercel, or internal server)
+- **Frontend**: React.js (JavaScript), React-Router-DOM, UUIDv4, Luxon
+- **Styling**: CSS, Bootstrap, Tailwind
+- **Hosting**: Render
+- **Backend**: Node, Express, JWT, Bcrypt, Dotenv, Body-Parser, CORS
 
 ---
 
@@ -101,7 +102,7 @@ The **BigPanda Condition Generator** web app provides:
 
 ---
 
-## 🚀 Future Enhancements (Ideas):
+## 🚀 Future Enhancements (Idea):
 
 - Integration with **ServiceNow Change Requests**
 - Saving common server groups for reuse
