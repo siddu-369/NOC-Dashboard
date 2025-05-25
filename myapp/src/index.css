@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@tailwind utilities;
+@import "bootstrap/dist/css/bootstrap.min.css";
+.nav-logo {
+  height: 62px;
+  width: 120px;
+  border-radius: 12px;
+}
+
+.input-container {
+  height: 100vh;
+  background-color: beige;
+}
+
+.hover-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+}
+
+.card-img-top {
+  height: 150px;
+
+  object-fit: cover;
+  padding: 18px;
+}
+
+.nav-link {
+  list-style-type: none;
+}
