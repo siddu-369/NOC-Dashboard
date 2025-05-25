@@ -3,9 +3,12 @@
 ## To setup this into local system, clone the repository using the following commands.
 
 ```bash
-    git clone
+    git clone <URL>
 ```
+```bash
+    cd myapp
 
+```
 ```bash
     npm i
 ```
@@ -14,6 +17,22 @@
     npm run dev
 
 ```
+
+Backend Setup.
+
+```bash
+    cd backend
+
+```
+```bash
+    npm i
+
+```
+```bash
+    node server.js
+
+```
+
 
 # My Apps
 
