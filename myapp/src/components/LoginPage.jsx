@@ -7,6 +7,7 @@ const Login = () => {
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   // const handleLogin = (e) => {
@@ -20,6 +21,8 @@ const Login = () => {
   // };
   const handleLogin = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError(""); // Clear previous errors
     try {
       const response = await fetch("https://noc-dashboard-test.onrender.com/api/login", {
         method: "POST",
@@ -37,12 +40,21 @@ const Login = () => {
       }
     } catch (err) {
       setError("Server error. Please try again later.");
+    } finally {
+      setLoading(false);
     }
   };
-
   return (
-    <div className="container mt-5 vh-100">
-      <div className="row justify-center">
+    <div
+      className="d-flex justify-content-center align-items-center vh-100"
+      style={{
+        backgroundColor: '#f8f9fa', // Or any desired background color
+        backgroundImage: 'linear-gradient(to bottom, #f8f9fa, #e9ecef)', // Optional: add a gradient
+      }}
+    >
+      {/* Removed original container classes for centering */}
+      <div className="row justify-content-center w-100"> {/* Added w-100 to the row */}
+
         <div className="col-md-4">
           <div className="card p-4 shadow">
             <div>
@@ -71,8 +83,14 @@ const Login = () => {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100">
-                Login
+              <button
+                type="submit"
+                className="btn btn-primary w-100"
+                disabled={loading}
+              >
+                {loading ? (
+                  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                ) : "Login"}
               </button>
             </form>
           </div>
